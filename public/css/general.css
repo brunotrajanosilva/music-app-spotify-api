@@ -1,0 +1,121 @@
+
+.body-container{
+    padding: 30px;
+    background-color:#e5e5e5;
+    height: 100%;
+}
+
+.main-image{
+    height: auto;
+    max-width: 100%;
+}
+
+.card-item{
+    background-color: white;
+    padding: 0px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card-item .card-image{
+    background-position: center;
+    background-size: cover;
+}
+
+.card-item .card-image img{
+    visibility: hidden;
+    margin: 0px;
+    width: 100%;
+    height: auto;
+}
+
+.card-item .card-details{
+    padding: 20px;
+}
+
+.card-item .card-details .details-title{
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.card-item .card-details .details-text{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    margin: 0px;
+    height: 42px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.comma-item:not(:last-child)::after{
+    content: ", ";
+    display: inline;
+}
+
+.grid-cards{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 15px;
+}
+
+.grid-more{
+    display: block;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 15px;
+    border-bottom: 1px solid rgb(33,37,41);
+}
+
+.nav-brand i{
+    font-size: 20px;
+}
+
+a{
+    color: #212529;
+}
+
+a:hover{
+    text-decoration: none;
+    color: darkgray;
+}
+
+.form-control:focus{
+    appearance: none;
+    border: 1px solid #212529;
+    box-shadow: none;
+}
+
+
+@media(min-width: 400px){
+    .body-container{
+        padding: 5% 10%;
+    }
+
+    .grid-cards{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+    }
+}
+
+@media(min-width: 1000px){
+    .body-container{
+        padding: 30px;
+    }
+
+    .grid-cards{
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 15px;
+    }
+}
+
+@media(min-width: 1300px){
+    .body-container{
+        padding: 5% 10%;
+    }
+}
